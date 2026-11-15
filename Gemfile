@@ -5,6 +5,13 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.4"
 gem "minima", "~> 2.5"
 
+# Ruby 3.x / 4.x の標準ライブラリ分離対応（webrick, csv, base64等）
+gem "webrick", "~> 1.8"
+gem "csv", "~> 3.3"
+gem "base64", "~> 0.2"
+gem "bigdecimal", "~> 3.1"
+gem "mutex_m", "~> 0.2"
+
 # 推奨プラグイン
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
