@@ -1,0 +1,45 @@
+# サイト基本設定
+title: My Tech Blog
+email: your-email@example.com
+description: >-
+  JekyllとGitHub Pagesで構築した技術ブログです。
+  プログラミングや日々の学びを発信します。
+baseurl: "/kc" # リポジトリ名
+url: "https://2shi0.github.io" # 公開URL
+
+# 著者情報（記事フッターやメタデータに利用されます）
+author:
+  name: 2shi0
+  email: your-email@example.com
+  github: 2shi0
+
+# テーマ設定（標準のMinimaテーマを使用）
+theme: minima
+
+# プラグイン設定
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Minimaテーマの設定
+minima:
+  date_format: "%Y-%m-%d"
+
+# ビルド・Markdown設定
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# ビルド対象外のファイル・ディレクトリ
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+  - LICENSE
